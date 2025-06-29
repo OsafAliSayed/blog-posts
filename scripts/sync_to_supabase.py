@@ -8,6 +8,8 @@ load_dotenv()  # Optional for local testing
 
 SUPABASE_URL = os.environ["SUPABASE_URL"]
 SUPABASE_KEY = os.environ["SUPABASE_KEY"]
+print(f"Supabase URL: {SUPABASE_URL}")  # Debugging line to check if the URL is loaded correctly
+print(f"Supabase Key: {SUPABASE_KEY}")  # Debugging line to check if the key is loaded correctly
 BUCKET_NAME = "blog-posts"
 TABLE_NAME = "blog_metrics"
 
