@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# But don't ignore the 01_blogs/posts folder and its contents
+!.gitignore
+!01_blogs/
+!01_blogs/posts/
+!01_blogs/posts/**
+
+
