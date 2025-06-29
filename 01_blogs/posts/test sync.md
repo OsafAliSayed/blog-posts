@@ -1,3 +1,11 @@
+---
+title: test sync
+created: 29 June 2025
+tags:
+  - "#test"
+  - "#checkthisout"
+---
+
 this md file tests the syncing thing you know, like syncing with supabase thing kinda like uno.
 
 ```python
