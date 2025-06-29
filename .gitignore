@@ -3,8 +3,18 @@
 
 # But don't ignore the 01_blogs/posts folder and its contents
 !.gitignore
+
+!.github/
+!.github/workflows/
+!.github/workflows/sync_to_supabase.yml
+
+
 !01_blogs/
 !01_blogs/posts/
 !01_blogs/posts/**
 
 
+!scripts/
+!scripts/*
+
+!README.md
