@@ -1,6 +1,5 @@
 import os
 import re
-import frontmatter
 from pathlib import Path
 from supabase import create_client, Client
 from dotenv import load_dotenv
