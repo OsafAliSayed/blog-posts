@@ -8,8 +8,7 @@ load_dotenv()  # Optional for local testing
 
 SUPABASE_URL = os.environ["SUPABASE_URL"]
 SUPABASE_KEY = os.environ["SUPABASE_KEY"]
-print(f"Supabase URL: {SUPABASE_URL}")  # Debugging line to check if the URL is loaded correctly
-print(f"Supabase Key: {SUPABASE_KEY}")  # Debugging line to check if the key is loaded correctly
+
 BUCKET_NAME = "blog-posts"
 TABLE_NAME = "blog_metrics"
 
@@ -34,8 +33,7 @@ def upload_markdown_files():
         response = supabase.storage.from_(BUCKET_NAME).upload(
             path=storage_path,
             file=content,
-            file_options={"content-type": "text/markdown"},
-            upsert=True
+            file_options={"content-type": "text/markdown", "upsert": "true"},
         )
 
         if hasattr(response, "error") and response.error:
